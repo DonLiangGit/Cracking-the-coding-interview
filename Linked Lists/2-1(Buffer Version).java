@@ -2,6 +2,7 @@
  * 2-1 
  * Remove duplicates from linked list
  * Use Temporary Buffer(Hash Table)
+ * Parameter is head of the linked list.
  */
 
 public static void removeDuplicates(LinkedListNode node) {
