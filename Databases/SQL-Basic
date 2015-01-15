@@ -1,0 +1,16 @@
+/* SQL Statements Basic */
+INNER JOIN: Intersection between two dataset;
+NATURAL JOIN: It is like INNER JOIN(The difference is NATURAL JOIN avoids duplicate column)
+
+FULL OUTER JOIN: Keep all the records including ZERO; (COMBINED LEFT/RIGHT OUTER JOIN)
+(CROSS JOIN) return all the possible rows using cartisian products
+LEFT JOIN: 
+List all the Table A records, 
+connect the matching records in B, other set null;
+RIGHT JOIN: 
+List all the Table B records, 
+connect the matching records in A, other set null;
+
+EQUI JOIN: 
+SELF JOIN: join table itself, get the information rows user wants.
+

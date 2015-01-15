@@ -6,8 +6,23 @@
 public LinkedListNode findKthElement(LinkedListNode head, int k) {
 
 	private int listLength = countLinkedList(head);
-	
+	if(listLength == 0 || k > listLength) return null;
 
+	private LinkedListNode slower = head;
+	private LinkedListNode runner = head;
+	private int count = 1;
+
+	while(count != k) {
+		runner = runner.next;
+		count ++;
+	}
+
+	while(runner.next != null) {
+		runner = runner.next;
+		slower = slower.next
+	}
+
+	return slower;
 }
 
 public int countLinkedList(LinkedListNode head) {
