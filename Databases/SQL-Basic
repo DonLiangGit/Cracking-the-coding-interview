@@ -14,3 +14,21 @@ connect the matching records in A, other set null;
 EQUI JOIN: 
 SELF JOIN: join table itself, get the information rows user wants.
 
+/* SQL Aggregate function */
+AVG()
+COUNT()
+FIRST()
+LAST()
+MAX()
+MIN()
+SUM()
+
+HAVING(function condition)
+WHERE column_name IN (mutiple values)
+
+/* Database Basic */
+Denormalization is a database optimization to add redundant data to one or more tables.
+This can help reduce the costly JOINS!
+Normalization minimize the redundant data, suitable to write-heavy.
+Denormalization minimiaze JOINS, suitable to read-heavy.
+
