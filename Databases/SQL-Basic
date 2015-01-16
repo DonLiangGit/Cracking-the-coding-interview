@@ -1,6 +1,10 @@
-/* SQL Statements Basic */
+/* SQL Statements Basic 
+ * http://dev.mysql.com/doc/refman/5.0/en/select.html
+ */
 INNER JOIN: Intersection between two dataset;
 NATURAL JOIN: It is like INNER JOIN(The difference is NATURAL JOIN avoids duplicate column)
+JOIN & UNION, union produce similar column
+SELECT NOT IN will return empty set if there is null value.
 
 FULL OUTER JOIN: Keep all the records including ZERO; (COMBINED LEFT/RIGHT OUTER JOIN)
 (CROSS JOIN) return all the possible rows using cartisian products
@@ -23,8 +27,20 @@ MAX()
 MIN()
 SUM()
 
+DISTINCT
+SELECT UNIQUE
 HAVING(function condition)
 WHERE column_name IN (mutiple values)
+ Having & Where, where only applies to non-aggregated function, having vice versa.
+ISNULL(check_expression, replace_expression)
+LIMIT offset, return_rowcount
+GROUP BY
+/**/
+UPDATE table_name
+SET attribute = new value
+/**/
+INSERT INTO table_name (column_name)
+values (values)
 
 /* Database Basic */
 Denormalization is a database optimization to add redundant data to one or more tables.
