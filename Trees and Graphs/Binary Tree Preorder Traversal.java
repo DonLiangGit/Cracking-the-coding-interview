@@ -1,25 +1,24 @@
 /* Cracking the coding interview
  * Pre-work 
- * Binary Tree Inorder Traversal
+ * Binary Tree Preorder Traversal
  *
- * Method: Recursion to add the tree value to the array
+ * Method: 
  */
 
 public class Solution {
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public List<Integer> preorderTraversal(TreeNode root) {
         ArrayList<Integer> result = new ArrayList<Integer>();
         helper(root, result);
         return result;
     }
-
-    private void helper(TreeNode root, List<Integer> result) {
-    	if(root == null) { return; }
-    	else {
-    		helper(root.left, result);
-    		result.add(root.val);
-    		helper(root.right, result);
-    	}
-
+  
+    private void helper(TreeNode node, ArrayList<Integer> result) {
+        if(node == null) { return; }
+        else {
+          result.add(node.val);
+          helper(node.left, result);
+          helper(node.right, result);
+        }
     }
 }
 
