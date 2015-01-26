@@ -12,7 +12,7 @@ public class Solution {
         int[] result = new int[2];
 
         for(int i = 0; i < numbers.length; i++) {
-            if(hashMap.containsKey(target - numbers[i])) {
+            if(hashMap.containsKey(numbers[i])) {
                 int index = hashMap.get(numbers[i]);
                 result[0] = index + 1;
                 result[1] = i + 1;
