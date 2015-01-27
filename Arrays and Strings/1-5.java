@@ -11,7 +11,7 @@ public String stringCompression(String str) {
 	}
 
 	StringBuffer strBuffer = new StringBuffer();
-	nt count = 1;
+	int count = 1;
 	char letter = str.charAt(0);
 	for(int i = 1; i < str.length(); i++) {
 		if(str.chatAt(i) == letter) {
