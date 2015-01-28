@@ -27,6 +27,6 @@ public class Solution {
 
 /*
  * Extension:
- * APIs: 
+ * APIs: toLowerCase() and regex expression
  * Note: 
  */
