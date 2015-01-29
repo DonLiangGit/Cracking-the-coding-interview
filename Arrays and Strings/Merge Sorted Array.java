@@ -11,13 +11,15 @@ public class Solution {
         int bTail = n - 1;
         int combineTail = m + n - 1;
 
-        for(int i = combineTail; i >= 0; i--) {
-            if((A[aTail] > B[bTail]&&aTail >=0) || bTail < 0) {
-                A[i] = A[aTail];
+        while(combineTail >= 0){
+            if(bTail < 0 || (aTail >= 0 && A[aTail] > B[bTail])) {
+                A[combineTail] = A[aTail];
                 aTail--;
+                combineTail--;
             } else {
-                A[i] = A[bTail];
+                A[combineTail] = B[bTail];
                 bTail--;
+                combineTail--;
             }
         }
     }
