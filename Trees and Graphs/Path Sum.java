@@ -15,7 +15,12 @@ public class Solution {
             return true;
         }
 
+<<<<<<< HEAD
         return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
+=======
+        return hasPathSum(root.left, sum - root.val) || 
+        hasPathSum(root->right,sum - root->val);
+>>>>>>> 59a7c079222859cf7f51845dc08aa36bc6b9d51c
     }
 }
 
