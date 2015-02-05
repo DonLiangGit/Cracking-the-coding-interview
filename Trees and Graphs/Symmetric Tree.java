@@ -33,7 +33,7 @@ public class Solution {
             return false;
         }
 
-        if (!isSymmetricHelper(leftNode.left, rightNode.right) { 
+        if (!isSymmetricHelper(leftNode.left, rightNode.right)) { 
             return false; 
         }
         if (!isSymmetricHelper(leftNode.right, rightNode.left)) {
