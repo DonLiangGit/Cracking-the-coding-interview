@@ -18,7 +18,9 @@ public class Solution {
         // Sort Array;
         Arrays.sort(num);
 
+        // num.length - 2 ensure there still valid amount of elements to check.
         for(int i = 0; i < num.length - 2; i++) {
+            // Duplicate avoidance for Reference Value
             if(i == 0 || num[i] > num[i - 1]) {
 
                 int negate = -num[i];       // Get the first num and decide the sum of other two.
@@ -33,6 +35,17 @@ public class Solution {
                         temp.add(num[start]);
                         temp.add(num[end]);
                         result.add(temp);
+
+                        start++;
+                        end--;
+                        // Duplicate avoidance
+                        while(start < end && num[end] == num[end+1]) {
+                            end--;
+                        }
+                        while(start < end && num[start] == num[start-1]) {
+                            start++;
+                        }
+
                     } else if(num[start] + num[end] < negate){
                     // Case 2: 
                         start++;
