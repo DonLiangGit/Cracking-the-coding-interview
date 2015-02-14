@@ -30,7 +30,7 @@ public class Solution {
         }
 
         if(carry == 1){
-            newListNode.next = newListNode(1);
+            newListNode.next = new ListNode(1);
         }
 
         return newListHead.next;
