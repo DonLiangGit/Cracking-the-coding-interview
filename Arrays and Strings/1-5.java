@@ -1,6 +1,8 @@
 /* Cracking the coding interview
  * 1-5
  * String Compression
+ * Example: aaabccccaaa 
+ * Ouput: a3b1c4a3
  */
 
 public String stringCompression(String str) {
