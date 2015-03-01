@@ -11,7 +11,7 @@ public class Solution {
         return validate(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
  
-    public static boolean validate(TreeNode root, int min, int max) {
+    public static boolean validate(TreeNode root, long min, long max) {
         if (root == null) {
             return true;
         }
